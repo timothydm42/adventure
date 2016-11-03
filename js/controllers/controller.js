@@ -4,9 +4,5 @@ angular.module("app").controller("ctrl", function($scope, service){
 
     $scope.germData = service.getGerms();
 
-    $scope.func = (v,i) => v+i;
-
-    
-    $scope.func2 = (v,i) => v+i;
-    
+    $scope.func = (v,i) => v+i;    
 });
