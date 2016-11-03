@@ -1,3 +1,14 @@
+$mainColor: orange;
+$secondaryColor: grey;
+
+body {
+  background-color: $mainColor;
+}
+
+.germs {
+  background-color: $secondaryColor;
+}
+
 .name {
     font-size: 22px;
 }
