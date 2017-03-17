@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
+.wrapper {
+  height: 100vh;
+  width: 100vw; }
+
+.main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.turn {
+  height: 50px; }
+
+.head {
+  background-color: lightGreen;
+  height: 10%; }
+
+.foot {
+  background-color: lightGreen;
+  height: 10%; }
+
+
+/*# sourceMappingURL=maps/styles.css.map */

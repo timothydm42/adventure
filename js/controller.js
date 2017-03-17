@@ -1,7 +1,8 @@
-angular.module("app").controller("ctrl", function($scope, service){
-   
-    $scope.thisappisbroken = "This app is working";
+angular.module("app").controller("ctrl", ['$scope',"$state",'service',function($scope, $state, service){
 
-    $scope.germData = service.getGerms();
-    
-});
+  $scope.torchEncounter = service.getEncounter().then(function(result) {
+    console.log(result);
+    return result.data
+  });
+
+}]);
