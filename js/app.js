@@ -5,7 +5,7 @@
 angular.module("app", ["ui.router"]).config(["$stateProvider","$urlRouterProvider",function($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state("home", {
-    url: "/",
+    url: "",
     template:"<home></home>"
   }).state("encounter",{
     url: "/encounter",
