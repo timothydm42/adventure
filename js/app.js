@@ -12,16 +12,12 @@ angular.module("app", ["ui.router"]).config(["$stateProvider","$urlRouterProvide
     template:"<encounter></encounter>"
   }).state("nature", {
     url: "/nature",
-    // templateUrl:,
-  }).state("habitat", {
-    url: "/habitat",
-    // template:,
-  }).state("berries", {
-    url: "/berries",
-    // template:,
+    template:"<nature></nature>"
+  }).state("berry", {
+    url: "/berry",
+    template:"<berry></berry>"
   }).state("flavorText", {
     url: "/flavorText",
-    // template:,
   });
 
 }]);

@@ -1,17 +1,28 @@
 angular.module("app").service("service", ["$http", "$q", function($http, $q){
 
-    this.getSpecies = function() {
+    this.getSpecies = () => {
       return $http({
         url:"http://pokeapi.co/api/v2/pokemon-species/torchic/",
         method:"GET"
       });
     };
-
-    this.getEncounter = function() {
+    this.getNature = () => {
       return $http({
-        url:"http://pokeapi.co/api/v2/encounter-method/1/",
+        url:"http://pokeapi.co/api/v2/nature/gentle/",
         method:"GET"
       });
-    }
+    };
+    this.getBerry = () => {
+      return $http({
+        url:"http://pokeapi.co/api/v2/berry/petaya/",
+        method:"GET"
+      });
+    };
+    // this.getEncounter = function() {
+    //   return $http({
+    //     url:"http://pokeapi.co/api/v2/encounter-method/1/",
+    //     method:"GET"
+    //   });
+    // }
 
 }]);
