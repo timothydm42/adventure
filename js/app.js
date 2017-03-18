@@ -10,14 +10,15 @@ angular.module("app", ["ui.router"]).config(["$stateProvider","$urlRouterProvide
   }).state("encounter",{
     url: "/encounter",
     template:"<encounter></encounter>"
+  }).state("desc", {
+    url: "/desc",
+    template:"<desc></desc>"
   }).state("nature", {
     url: "/nature",
     template:"<nature></nature>"
   }).state("berry", {
     url: "/berry",
     template:"<berry></berry>"
-  }).state("flavorText", {
-    url: "/flavorText",
   });
 
 }]);

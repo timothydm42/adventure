@@ -13,12 +13,10 @@ angular.module("app").directive("berry",[function() {
 
       var getBerry = () => {
         service.getBerry().then(function(result) {
-          console.log(result.data);
           $scope.flavor = result.data.flavors[3].flavor.name;
           $scope.berry = result.data.item.name
         })
       };
-
       getSpecies();
       getBerry();
     }],

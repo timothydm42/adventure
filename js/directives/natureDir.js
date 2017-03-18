@@ -11,7 +11,6 @@ angular.module("app").directive("nature", [function() {
       }
       function getNature() {
         service.getNature().then(function(result) {
-          console.log(result);
           $scope.nature = result.data.name;
           $scope.preference = result.data.likes_flavor.name;
         })

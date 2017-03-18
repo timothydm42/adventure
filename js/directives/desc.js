@@ -1,18 +1,16 @@
-angular.module("app").directive("encounter", [function() {
+angular.module("app").directive("desc", [function() {
   return {
-    templateUrl:"../../views/encounterDir.html",
+    templateUrl:"../../views/desc.html",
     restrict:"E",
     scope:{},
     controller:["$scope","service",function($scope,service) {
 
       function getSpecies() {
         service.getSpecies().then(function(result) {
-          $scope.habitat = result.data.habitat.name;          
-          $scope.name = result.data.name;
+          $scope.text = result.data.flavor_text_entries[1].flavor_text;
         })
       }
       getSpecies();
-
     }],
   };
 }]);
