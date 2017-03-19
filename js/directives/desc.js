@@ -1,6 +1,6 @@
 angular.module("app").directive("desc", [function() {
   return {
-    templateUrl:"../../views/desc.html",
+    templateUrl:"/js/directives/views/desc.html",
     restrict:"E",
     scope:{},
     controller:["$scope","service",function($scope,service) {

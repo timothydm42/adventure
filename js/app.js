@@ -4,8 +4,10 @@
 // npm install will only install stuff from the package.json file listed as values under dependencies property vprsigsfi[fgh[dfoihdfgh[difghidf[gih]]]]
 angular.module("app", ["ui.router"]).config(["$stateProvider","$urlRouterProvider",function($stateProvider, $urlRouterProvider) {
 
+  $urlRouterProvider.when("", "/home");
+
   $stateProvider.state("home", {
-    url: "",
+    url: "/home",
     template:"<home></home>"
   }).state("encounter",{
     url: "/encounter",

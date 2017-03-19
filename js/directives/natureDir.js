@@ -1,6 +1,6 @@
 angular.module("app").directive("nature", [function() {
   return {
-    templateUrl:"../../views/natureDir.html",
+    templateUrl:"/js/directives/views/natureDir.html",
     restrict:"E",
     scope:{},
     controller:["$scope","service",function($scope,service) {
