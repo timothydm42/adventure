@@ -4,6 +4,88 @@ body {
   margin: 0px;
   padding: 0px;
 }
+h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 5vh;
+}
+p {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  width: 35%;
+  color: white;
+  font-family: monospace;
+  font-size: 4.5vh;
+}
+button {
+  position: fixed;
+  top: 15%;
+  right: 5%;
+  background-color: white;
+  border-color: yellow;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 100%;
+  font-family: monospace;
+  font-size: 3vh;
+  height: 8.5vh;
+  width: 8.5vw;
+}
+.home  {
+  position: fixed;
+  right:45%;
+  top: 12%;
+  height: 33vh;
+}
+.girlBack {
+  position: fixed;
+  left:34%;
+  bottom:10%;
+  height: 60vh;
+}
+.natureGirl {
+  position: fixed;
+  left:34%;
+  bottom:10%;
+  height: 60vh;
+}
+.berryGirl {
+  position: fixed;
+  left:25%;
+  bottom:10%;
+  height: 75vh;
+}
+.torchicBack {
+  position: fixed;
+  right:90px;
+  bottom:5%;
+  height: 40vh;
+}
+.torchicFront {
+  position: fixed;
+  right:5%;
+  bottom:-8%;
+  height: 70vh;
+}
+.natureTorchic {
+  position: fixed;
+  right:10%;
+  bottom:-8%;
+  height: 70vh;
+}
+.berryTorchic {
+  position: fixed;
+  right:20%;
+  bottom:20%;
+  height: 25vh;
+}
+.berry {
+  position: fixed;
+  right:37%;
+  bottom:36%;
+  height: 15vh;
+}
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -14,6 +96,9 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-image: url("../styles/assets/grass.png");
+  background-repeat: repeat;
+  background-size:contain;
 }
 .head {
   background-color: $headerFooter;
