@@ -1,6 +1,6 @@
 angular.module("app").directive("encounter", [function() {
   return {
-    templateUrl:"/js/directives/views/encounterDir.html",
+    templateUrl:"./views/encounterDir.html",
     restrict:"E",
     scope:{},
     controller:["$scope","service",function($scope,service) {

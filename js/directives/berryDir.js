@@ -1,6 +1,6 @@
 angular.module("app").directive("berry",[function() {
   return {
-    templateUrl:"/js/directives/views/berryDir.html",
+    templateUrl:"./views/berryDir.html",
     restrict:"E",
     scope:{},
     controller:["$scope","service",function($scope,service) {

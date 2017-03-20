@@ -2,7 +2,7 @@
 angular.module("app").directive("home", [function() {
 
   return {
-    templateUrl: "/js/directives/views/homeDir.html",
+    templateUrl: "./views/homeDir.html",
     restrict: "E",
     scope: {},
     controller: ["$scope", "service", function($scope, service) {
